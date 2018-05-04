@@ -1,23 +1,27 @@
 let mapleader=" "
-
-" Personal hotkeys
 inoremap jk <esc>
+
+" Quick semicolon/comma placement
 nnoremap <leader>; A;<esc>
 nnoremap <leader>, A,<esc>
+
+" remove search highlighting
 nnoremap <leader>n :noh<cr>
+
+" Remove whitespace
 nnoremap <leader>w :%s/\s\+$//e<cr>
+
 " move to beginning and end of line with H, K
-" and move quicker with K
 nnoremap H \|
 nnoremap L $
 vnoremap H \|
 vnoremap L $
 onoremap H \|
 onoremap L $
-" delete to end of line
-nnoremap <C-k> d$
+
 " easier to go back in searches
 nnoremap m N
+
 " custom bracket completion
 vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>
 vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
@@ -28,10 +32,10 @@ vnoremap <leader>[ <esc>`>a]<esc>`<i[<esc>
 vnoremap <leader>] <esc>`>a]<esc>`<i[<esc>
 vnoremap <leader>{ <esc>`>a}<esc>`<i{<esc>
 vnoremap <leader>} <esc>`>a}<esc>`<i{<esc>
-" quit
-nnoremap <leader>Q :q<cr>
+
 " Quick Save
 nnoremap <C-s> :w<CR>
+
 " replace single quotes with double
 nnoremap <leader>" :%s/'/"/g
 " replace double quotes with single
@@ -49,11 +53,13 @@ nnoremap <C-h> :bprevious<CR>
 nnoremap <tab> %
 vnoremap <tab> %
 
+" Move lines up or down
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
+" Copy and paste from system clipboard
 vnoremap <C-y> "+y
 nnoremap <C-p> "+p
 inoremap <C-p> "+p
