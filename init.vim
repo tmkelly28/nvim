@@ -20,6 +20,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-markdown'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
