@@ -45,9 +45,9 @@ nnoremap <leader>' :%s/"/'/g
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprevious<CR>
 " Close buffers with vim-bbye
-:nnoremap <C-q> :Bdelete<CR>
+nnoremap <C-q> :Bdelete<CR>
 " Close all open buffers with vim-bbye
-:nnoremap Q :bufdo Bdelete<CR>
+nnoremap Q :bufdo Bdelete<CR>
 
 " Use tab to jump between blocks, because it's easier
 nnoremap <tab> %
