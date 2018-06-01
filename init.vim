@@ -22,6 +22,9 @@ Plug 'tpope/vim-markdown'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'ElmCast/elm-vim'
+Plug 'lumiliet/vim-twig'
 
 call plug#end()
 
