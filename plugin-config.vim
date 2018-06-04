@@ -33,3 +33,6 @@ endif
 " bind \ (backward slash) to grep shortcut
 command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
+
+" ale
+let g:ale_linters = {'javascript': ['eslint']}
