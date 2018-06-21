@@ -26,6 +26,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'ElmCast/elm-vim'
 Plug 'lumiliet/vim-twig'
 Plug 'moll/vim-node'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
