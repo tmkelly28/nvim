@@ -11,3 +11,7 @@ endfunction
 function Fix()
   execute "ALEFix eslint"
 endfunction
+
+function Indent()
+  execute 'normal! ggVG='
+endfunction
