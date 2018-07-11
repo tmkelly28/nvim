@@ -33,3 +33,4 @@ call plug#end()
 source $HOME/.config/nvim/plugin-config.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/config.vim
+source $HOME/.config/nvim/functions.vim

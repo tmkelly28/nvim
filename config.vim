@@ -45,8 +45,6 @@ set encoding=utf-8   " Natch
 set list             " Show whitespace characters
 set listchars=tab:▒░,trail:▓
 set hlsearch        " Highlight previous search pattern
-set ignorecase      " Ignore case in search pattern
-set smartcase       " ^ But be smart about it
 set hidden          " Allows switching buffers without saving changes
 set nobackup        " Don't create backup files - live on the wild side
 set nowritebackup   " Changes the save behavior of vim to write directly to buffer - danger is my middle name
