@@ -15,3 +15,7 @@ endfunction
 function Indent()
   execute 'normal! ggVG='
 endfunction
+
+function Arrow()
+  execute 'normal! dw%a =>'
+endfunction
