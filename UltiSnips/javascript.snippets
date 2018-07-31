@@ -69,3 +69,32 @@ it('$1', () => {
   $2
 })
 endsnippet
+
+snippet reducer "A Redux reducer"
+const initialState = $1
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    default:
+     return state
+  }
+}
+
+export default reducer
+endsnippet
+
+snippet ac "A Redux action creator"
+export const $1 = ($2) => ({
+  type: $3,
+  $4
+})
+endsnippet
+
+snippet tc "A generic redux thunk creator for making AJAX requests"
+export const $1 = ($2) => (dispatch, getState, {axios}) => {
+  try {
+    const {data} = axios.$3($4)
+  } catch (err) {
+  }
+}
+endsnippet
