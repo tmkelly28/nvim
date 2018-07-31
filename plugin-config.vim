@@ -36,3 +36,8 @@ nnoremap \ :Ag<SPACE>
 
 " ale
 let g:ale_linters = {'javascript': ['eslint']}
+
+" ultisnips
+let g:UltiSnipsExpandTrigger="<c-b>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

@@ -63,3 +63,6 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 vnoremap <C-y> "+y
 nnoremap <C-p> "+p
 inoremap <C-p> "+p
+
+" Source
+nnoremap <leader>s :so ~/.config/nvim/init.vim<CR>

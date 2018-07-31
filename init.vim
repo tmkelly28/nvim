@@ -27,6 +27,7 @@ Plug 'ElmCast/elm-vim'
 Plug 'lumiliet/vim-twig'
 Plug 'moll/vim-node'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
