@@ -28,6 +28,8 @@ Plug 'lumiliet/vim-twig'
 Plug 'moll/vim-node'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-rails'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
