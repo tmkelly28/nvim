@@ -3,13 +3,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'moll/vim-bbye'
 Plug 'vim-airline/vim-airline'
-Plug 'Valloric/YouCompleteMe'
 Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flazz/vim-colorschemes'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'cocopon/iceberg.vim'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'ternjs/tern_for_vim'
@@ -30,6 +30,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-rails'
 Plug 'posva/vim-vue'
+Plug 'vim-ruby/vim-ruby'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 

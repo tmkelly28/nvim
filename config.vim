@@ -4,7 +4,7 @@ filetype plugin indent on
 if (has("termguicolors"))
   set termguicolors
 endif
-colorscheme iceberg
+colorscheme palenight
 highlight NonText ctermfg=bg guifg=bg cterm=NONE gui=NONE
 
 """ Configuration
