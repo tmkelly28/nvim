@@ -28,6 +28,10 @@ Plug 'tpope/vim-rails'
 Plug 'posva/vim-vue'
 Plug 'vim-ruby/vim-ruby'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'ngmy/vim-rubocop'
 
 call plug#end()
 
