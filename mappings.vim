@@ -20,7 +20,7 @@ onoremap H \|
 onoremap L $
 
 " easier to go back in searches
-nnoremap m N
+nnoremap <C-n> N
 
 " custom bracket completion
 vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>
