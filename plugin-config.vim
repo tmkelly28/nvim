@@ -9,7 +9,7 @@ nnoremap <S-n> :NERDTreeToggle<CR>
 nnoremap <A-h> <C-w>h
 nnoremap <A-l> <C-w>l
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['.git$','.DS_Store']
+let NERDTreeIgnore=['.git$','.DS_Store', 'tags']
 
 " Vim-Airline
 let g:airline#extensions#tabline#enabled=1
