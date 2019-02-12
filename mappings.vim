@@ -47,7 +47,9 @@ nnoremap <C-h> :bprevious<CR>
 " Close buffers with vim-bbye
 nnoremap <C-q> :Bdelete<CR>
 " Close all open buffers with vim-bbye
-nnoremap Q :bufdo Bdelete<CR>
+" nnoremap Q :bufdo Bdelete<CR>
+" Close window
+nnoremap Q :q<CR>
 
 " Use tab to jump between blocks, because it's easier
 nnoremap <tab> %

@@ -46,3 +46,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:deoplete#enable_at_startup = 1
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" codequery
+let g:codequery_find_text_cmd = 'Ag'
+let g:codequery_trigger_build_db_when_db_not_found = 1
+nnoremap <C-[> :CodeQueryMenu Unite Magic<CR>

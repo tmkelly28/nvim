@@ -32,6 +32,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'ngmy/vim-rubocop'
+Plug 'Shougo/unite.vim'
+Plug 'devjoe/vim-codequery'
 
 call plug#end()
 
