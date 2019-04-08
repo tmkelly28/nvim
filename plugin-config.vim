@@ -50,4 +50,6 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " codequery
 let g:codequery_find_text_cmd = 'Ag'
 let g:codequery_trigger_build_db_when_db_not_found = 1
+let g:codequery_auto_switch_to_find_text_for_wrong_filetype = 0
 nnoremap <C-[> :CodeQueryMenu Unite Magic<CR>
+nnoremap <C-F> :CodeQuery Text<CR>
