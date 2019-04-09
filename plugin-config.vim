@@ -9,7 +9,7 @@ nnoremap <S-n> :NERDTreeToggle<CR>
 nnoremap <A-h> <C-w>h
 nnoremap <A-l> <C-w>l
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['.git$','.DS_Store']
+let NERDTreeIgnore=['.git$','.DS_Store', 'tags']
 
 " Vim-Airline
 let g:airline#extensions#tabline#enabled=1
@@ -41,3 +41,15 @@ let g:ale_linters = {'javascript': ['eslint']}
 let g:UltiSnipsExpandTrigger="<c-b>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" codequery
+let g:codequery_find_text_cmd = 'Ag'
+let g:codequery_trigger_build_db_when_db_not_found = 1
+let g:codequery_auto_switch_to_find_text_for_wrong_filetype = 0
+nnoremap <C-[> :CodeQueryMenu Unite Magic<CR>
+nnoremap <C-F> :CodeQuery Text<CR>

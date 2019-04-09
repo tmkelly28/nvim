@@ -1,0 +1,3 @@
+- ag
+- gem install starscope
+- brew install codequery
