@@ -20,6 +20,10 @@ function! Arrow()
   execute 'normal! dw%a =>'
 endfunction
 
+function! JSON()
+  execute '%!python -m json.tool'
+endfunction
+
 " function! Arrowify()
 "   execute '%s/function/\=Arrow()/gc'
 " endfunction
