@@ -53,3 +53,6 @@ let g:codequery_trigger_build_db_when_db_not_found = 1
 let g:codequery_auto_switch_to_find_text_for_wrong_filetype = 0
 nnoremap <C-[> :CodeQueryMenu Unite Magic<CR>
 nnoremap <C-F> :CodeQuery Text<CR>
+
+" markdown
+let g:markdown_fenced_languages = ['html', 'css', 'javascript', 'json', 'ruby', 'python']
