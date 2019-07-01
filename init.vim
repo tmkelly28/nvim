@@ -34,6 +34,7 @@ Plug 'tpope/vim-repeat'
 Plug 'ngmy/vim-rubocop'
 Plug 'Shougo/unite.vim'
 Plug 'devjoe/vim-codequery'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 

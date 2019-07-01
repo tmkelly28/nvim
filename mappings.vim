@@ -66,5 +66,8 @@ vnoremap <C-y> "+y
 nnoremap <C-p> "+p
 inoremap <C-p> "+p
 
+" Paste from 0 buffer
+nnoremap <leader>p "0p
+
 " Source
 nnoremap <leader>s :so ~/.config/nvim/init.vim<CR>
