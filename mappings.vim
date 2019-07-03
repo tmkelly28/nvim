@@ -42,8 +42,8 @@ nnoremap <leader>" :%s/'/"/g
 nnoremap <leader>' :%s/"/'/g
 
 " Navigate between buffers
-nnoremap <C-l> :bnext<CR>
-nnoremap <C-h> :bprevious<CR>
+nnoremap <leader>l :bnext<CR>
+nnoremap <leader>h :bprevious<CR>
 " Close buffers with vim-bbye
 nnoremap <C-q> :Bdelete<CR>
 " Close all open buffers with vim-bbye
@@ -56,8 +56,8 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " Move lines up or down
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
+" nnoremap <C-j> :m .+1<CR>==
+" nnoremap <C-k> :m .-2<CR>==
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
