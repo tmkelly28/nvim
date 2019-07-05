@@ -12,12 +12,12 @@ nnoremap <leader>n :noh<cr>
 nnoremap <leader>w :%s/\s\+$//e<cr>
 
 " move to beginning and end of line with H, K
-nnoremap H \|
-nnoremap L $
-vnoremap H \|
-vnoremap L $
-onoremap H \|
-onoremap L $
+" nnoremap H \|
+" nnoremap L $
+" vnoremap H \|
+" vnoremap L $
+" onoremap H \|
+" onoremap L $
 
 " easier to go back in searches
 nnoremap <C-n> N
@@ -42,14 +42,11 @@ nnoremap <leader>" :%s/'/"/g
 nnoremap <leader>' :%s/"/'/g
 
 " Navigate between buffers
-nnoremap <leader>l :bnext<CR>
-nnoremap <leader>h :bprevious<CR>
+nnoremap L :bnext<CR>
+nnoremap H :bprevious<CR>
 " Close buffers with vim-bbye
 nnoremap <C-q> :Bdelete<CR>
-" Close all open buffers with vim-bbye
-" nnoremap Q :bufdo Bdelete<CR>
-" Close window
-nnoremap Q :q<CR>
+nnoremap Q :Bdelete<CR>
 
 " Use tab to jump between blocks, because it's easier
 nnoremap <tab> %
