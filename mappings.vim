@@ -68,3 +68,6 @@ nnoremap <leader>p "0p
 
 " Source
 nnoremap <leader>s :so ~/.config/nvim/init.vim<CR>
+
+" Search word under cursor
+nnoremap <C-f> :exe 'Ag' expand('<cword>')<cr>
