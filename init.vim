@@ -36,6 +36,7 @@ Plug 'Shougo/unite.vim'
 Plug 'devjoe/vim-codequery'
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'neovimhaskell/haskell-vim'
 
 call plug#end()
 
