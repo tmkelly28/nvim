@@ -22,17 +22,6 @@ nnoremap <leader>w :%s/\s\+$//e<cr>
 " easier to go back in searches
 nnoremap <C-n> N
 
-" custom bracket completion
-vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>
-vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
-vnoremap <leader>` <esc>`>a`<esc>`<i`<esc>
-vnoremap <leader>( <esc>`>a)<esc>`<i(<esc>
-vnoremap <leader>) <esc>`>a)<esc>`<i(<esc>
-vnoremap <leader>[ <esc>`>a]<esc>`<i[<esc>
-vnoremap <leader>] <esc>`>a]<esc>`<i[<esc>
-vnoremap <leader>{ <esc>`>a}<esc>`<i{<esc>
-vnoremap <leader>} <esc>`>a}<esc>`<i{<esc>
-
 " Quick Save
 nnoremap <C-s> :w<CR>
 
@@ -58,10 +47,8 @@ vnoremap <tab> %
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
-" Copy and paste from system clipboard
+" Paste from system clipboard
 vnoremap <C-y> "+y
-nnoremap <C-p> "+p
-inoremap <C-p> "+p
 
 " Paste from 0 buffer
 nnoremap <leader>p "0p

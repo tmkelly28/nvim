@@ -1,8 +1,12 @@
+" fzf
+set rtp+=/usr/local/opt/fzf
+nnoremap F :FZF<CR>
+nnoremap <C-p> :FZF<CR>
 " NerdTree
 autocmd StdinReadPre * let s:std_in=1
 
 " Open NERDTREE when vim opens
-autocmd vimenter * if @% !~# '.vimrc' && @% !~# '.tmux.conf' && @% !~# '.bash_profile' && @% !~# '.bashrc' && @% !~# '.eslintrc.json' && @% !~# '.todo'| NERDTree | endif
+" autocmd vimenter * if @% !~# '.vimrc' && @% !~# '.tmux.conf' && @% !~# '.bash_profile' && @% !~# '.bashrc' && @% !~# '.eslintrc.json' && @% !~# '.todo'| NERDTree | endif
 
 " Close vim if only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -17,11 +21,6 @@ let NERDTreeIgnore=['.git$','.DS_Store', 'tags$']
 " Vim-Airline
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
-
-" CtrlP
-" If Ctrl P can't find a file, use CtrlPClearAllCaches to clear
-let g:ctrlp_dont_split='NERD' " Play nice with NERDTree
-let g:ctrlp_regexp_search=1 " Default to regexp search
 
 " The Silver Searcher
 if executable('ag')
@@ -51,13 +50,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:deoplete#enable_at_startup = 1
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" codequery
-let g:codequery_find_text_cmd = 'Ag'
-let g:codequery_trigger_build_db_when_db_not_found = 1
-let g:codequery_auto_switch_to_find_text_for_wrong_filetype = 0
-nnoremap <C-[> :CodeQueryMenu Unite Magic<CR>
-nnoremap <C-F> :CodeQuery Text<CR>
 
 " markdown
 let g:markdown_fenced_languages = ['html', 'css', 'javascript', 'json', 'ruby', 'python']
