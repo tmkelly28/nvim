@@ -11,14 +11,6 @@ nnoremap <leader>n :noh<cr>
 " Remove whitespace
 nnoremap <leader>w :%s/\s\+$//e<cr>
 
-" move to beginning and end of line with H, K
-" nnoremap H \|
-" nnoremap L $
-" vnoremap H \|
-" vnoremap L $
-" onoremap H \|
-" onoremap L $
-
 " easier to go back in searches
 nnoremap <C-n> N
 
