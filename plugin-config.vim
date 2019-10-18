@@ -13,8 +13,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Navigation shortcuts
 nnoremap <S-n> :NERDTreeToggle<CR>
-nnoremap <A-h> <C-w>h
-nnoremap <A-l> <C-w>l
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['.git$','.DS_Store', 'tags$']
 
