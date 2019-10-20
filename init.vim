@@ -32,10 +32,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'ngmy/vim-rubocop'
 Plug 'Shougo/unite.vim'
-" Plug 'devjoe/vim-codequery'
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'tpope/vim-endwise'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
