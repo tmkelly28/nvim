@@ -51,3 +51,12 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " markdown
 let g:markdown_fenced_languages = ['html', 'css', 'javascript', 'json', 'ruby', 'python']
+
+" language client
+"
+" ruby:
+"   install solargraph globally using `gem install solargraph`
+"   confirm local installation path
+let g:LanguageClient_serverCommands = {
+    \ 'ruby': ['~/.rvm/gems/ruby-2.5.1/bin/solargraph', 'stdio'],
+    \ }

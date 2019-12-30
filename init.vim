@@ -38,13 +38,20 @@ Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'ngmy/vim-rubocop'
-Plug 'ternjs/tern_for_vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
+" CocInstall coc-tsserver coc-json coc-html coc-css coc-solargraph
+Plug 'neoclide/coc.nvim', {
+      \ 'branch': 'release',
+      \ }
+Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh',
+      \ }
 
 call plug#end()
 
