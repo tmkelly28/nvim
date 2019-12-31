@@ -24,6 +24,17 @@ function! JSON()
   execute '%!python -m json.tool'
 endfunction
 
+function! TestRails()
+  let path = expand('%:r')
+  let path = substitute(path, '^app', 'spec', '')
+  if path[-4:-1] == 'spec'
+    let path = '"./bin/rspec' . ' ' . path . '.rb"'
+  else
+    let path = '"./bin/rspec' . ' ' . path . '_spec.rb"'
+  endif
+  execute '!tmux send-keys -t 1 ' . path . ' Enter'
+endfunction
+
 " function! Arrowify()
 "   execute '%s/function/\=Arrow()/gc'
 " endfunction

@@ -56,7 +56,7 @@ set nobackup        " Don't create backup files - live on the wild side
 set nowritebackup   " Changes the save behavior of vim to write directly to buffer - danger is my middle name
 set fileformats=unix,dos,mac            " Used of EOL formats
 set completeopt=menuone,longest,preview " Options for insert mode completion
-set completeopt-=preview                " tern_for_vim - turn off the preview window
+" set completeopt-=preview                " tern_for_vim - turn off the preview window
 set guioptions-=r   " Remove right-hand scrollbar
 set guioptions-=L   " Remove left-hand scrollbar
 set lazyredraw      " Don't redraw sometimes

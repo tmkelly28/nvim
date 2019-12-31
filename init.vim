@@ -34,17 +34,27 @@ Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
-Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'ngmy/vim-rubocop'
-Plug 'ternjs/tern_for_vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
+
+" Coc
+" After installing coc for the first time, you need to install the
+" various language plugins:
+" :CocInstall coc-tsserver coc-json coc-html coc-css coc-solargraph coc-vetur
+Plug 'neoclide/coc.nvim', {
+      \ 'branch': 'release',
+      \ }
+Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh',
+      \ }
 
 call plug#end()
 
