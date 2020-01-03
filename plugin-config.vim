@@ -37,7 +37,10 @@ nnoremap \ :Ag<SPACE>
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " ale
-let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_linters = {
+      \ 'javascript': ['eslint'],
+      \ 'vue': ['eslint'],
+      \ }
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<c-b>"
