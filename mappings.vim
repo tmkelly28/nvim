@@ -53,3 +53,6 @@ nnoremap <C-f> :exe 'Ag' expand('<cword>')<cr>
 
 " Testing in Rails
 nnoremap <leader>t :call TestRails()<cr>
+
+" allow the . to execute once for each line of a visual selection
+vnoremap . :normal .<CR>
