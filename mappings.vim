@@ -50,6 +50,7 @@ nnoremap <leader>s :so ~/.config/nvim/init.vim<CR>
 
 " Search word under cursor
 nnoremap <C-f> :exe 'Ag' expand('<cword>')<cr>
+vnoremap <C-f> y:Ag <C-r>=fnameescape(@")<CR><CR>
 
 " Testing in Rails
 nnoremap <leader>t :call TestRails()<cr>
