@@ -27,6 +27,7 @@ Plug 'posva/vim-vue'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
+Plug 'davidhalter/jedi-vim'
 
 " Utilities
 Plug 'Raimondi/delimitMate'
