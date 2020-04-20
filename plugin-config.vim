@@ -102,3 +102,15 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+let g:ascii = [
+      \ '              .--~~,__  ',
+      \ ' :-....,-------`~~`._.` ',
+      \ '  `-,,,  ,_      ;`~U`  ',
+      \ '   _,-` ,``-__; `--.    ',
+      \ '  (_/`~~      ````(;    ',
+      \ '                        '
+      \]
+
+let g:startify_custom_header =
+      \ 'startify#pad(g:ascii + startify#fortune#boxed())'
