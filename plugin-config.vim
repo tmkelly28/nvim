@@ -14,7 +14,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Navigation shortcuts
 nnoremap <S-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['.git$','.DS_Store', 'tags$']
+let NERDTreeIgnore=['.git$','.DS_Store', 'tags$', '__pycache__']
 
 " Vim-Airline
 let g:airline#extensions#tabline#enabled=1
